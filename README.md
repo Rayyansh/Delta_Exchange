@@ -3,7 +3,6 @@
 <body>
 
 <h1>Delta Exchange Trading Bot</h1>
-<img src="https://www.delta.exchange/static/images/logo.svg" alt="Delta Exchange Logo">
 
 <p>Welcome to the Delta Exchange Trading Bot repository! This project is your gateway to automating and optimizing your cryptocurrency trading experience on Delta Exchange. With a focus on simplicity and efficiency, this Python-based trading bot empowers you to gather essential market data, perform technical analysis, and execute trades seamlessly.</p>
 
