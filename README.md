@@ -37,7 +37,6 @@
 <code>
 git clone https://github.com/Rayyansh/Delta_Exchange.git
 cd Delta_Exchange
-pip install -r requirements.txt
 </code>
 
 <h2 id="usage">Usage</h2>
