@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Delta Exchange Trading Bot</title>
-</head>
-
 <body>
 
 <h1>Delta Exchange Trading Bot</h1>
