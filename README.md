@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
 <h1>Delta Exchange Trading Bot</h1>
@@ -15,7 +16,6 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#files">Files</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
 </ul>
 
 <h2 id="introduction">Introduction</h2>
@@ -23,7 +23,7 @@
 
 <h2 id="features">Features</h2>
 <ul>
-    <li><strong>Effortless API Connection:</strong> The <code>delta.py</code> module seamlessly connects to the Delta Exchange API, requiring only your authentication keys.</li>
+    <li><strong>Effortless API Connection:</strong> The <code>delta.py</code> module acts as the backbone, seamlessly connecting to the Delta Exchange API using your authentication keys.</li>
     <li><strong>Price and Data Gathering:</strong> The <code>main.py</code> script fetches real-time market data, including prices, order book snapshots, and recent trades.</li>
     <li><strong>Technical Analysis:</strong> Utilize the <code>indicator.py</code> module to perform technical analysis on the gathered data, helping you make informed trading decisions.</li>
     <li><strong>Trade Execution:</strong> With the Delta Exchange API at your fingertips, execute trades directly from your Python environment.</li>
@@ -37,6 +37,7 @@
 <code>
 git clone https://github.com/Rayyansh/Delta_Exchange.git
 cd Delta_Exchange
+pip install -r requirements.txt
 </code>
 
 <h2 id="usage">Usage</h2>
@@ -46,7 +47,17 @@ cd Delta_Exchange
 API_KEY = 'YOUR_API_KEY'
 API_SECRET = 'YOUR_API_SECRET'
 </code>
-<p>Customize your trading strategy by modifying the <code>main.py</code> script to gather the data you need and implement your technical analysis using the <code>indicator.py</code> module.</p>
+<p>Customize your trading strategy by modifying the <code>main.py</code> script, where you import the <code>DeltaExchangeAPI</code> class from <code>delta.py</code> and use it to connect to the Delta Exchange API:</p>
+<code>
+# main.py
+from delta import DeltaExchangeAPI
+
+# Create an instance of DeltaExchangeAPI
+delta_api = DeltaExchangeAPI(API_KEY, API_SECRET)
+
+# Use delta_api to gather data and execute trades
+</code>
+
 <p>Run the <code>main.py</code> script to execute your trading strategy:</p>
 <code>
 python main.py
